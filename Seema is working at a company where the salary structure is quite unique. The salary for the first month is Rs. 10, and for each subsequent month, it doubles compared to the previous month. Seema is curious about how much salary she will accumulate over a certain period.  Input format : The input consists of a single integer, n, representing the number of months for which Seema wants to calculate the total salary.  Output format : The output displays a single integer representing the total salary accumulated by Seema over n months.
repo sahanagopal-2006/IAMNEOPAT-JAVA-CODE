@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+class main{
+    public static void main(String args[]){
+        int n,salary=10,sum=10;
+        Scanner sc= new Scanner (System.in);
+        n=sc.nextInt();
+        if(n==1){
+            System.out.println(salary);
+        }else{
+            for(int i=2;i<=n;i++){
+                salary*=2;
+                sum+=salary;
+            }
+    }System.out.println(sum);
+}
+}

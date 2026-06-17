@@ -1,0 +1,15 @@
+import java.util.*;
+class luckywinner{
+    public static void main(String args[]){
+        int number;
+        Scanner sc= new Scanner(System.in);
+        number = sc.nextInt();
+        int lastdigit = number %10 ;
+        if(lastdigit == 3 || lastdigit ==8){
+            System.out.println("Lucky winner");
+            
+        }else{
+            System.out.println("not lucky winner");
+        }
+    }
+}

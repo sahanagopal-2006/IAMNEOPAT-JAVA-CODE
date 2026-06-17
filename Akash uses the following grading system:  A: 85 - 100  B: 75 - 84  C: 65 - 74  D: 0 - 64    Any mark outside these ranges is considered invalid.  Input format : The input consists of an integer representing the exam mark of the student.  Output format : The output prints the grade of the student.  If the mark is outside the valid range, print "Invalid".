@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class main{
+    public static void main(String args[]){
+        int mark;
+        Scanner sc=new Scanner (System.in);
+        mark=sc.nextInt();
+        if(mark>=85 && mark<=100){
+            System.out.print("A");
+        } else if(mark>=75 && mark<85){
+            System.out.print("B");
+        } else if(mark>=65 && mark<75){
+            System.out.print("C");
+        } else if(mark>=0 && mark<65){
+            System.out.print("A");
+        }else{
+            System.out.print("Invalid");
+        }
+    }
+}

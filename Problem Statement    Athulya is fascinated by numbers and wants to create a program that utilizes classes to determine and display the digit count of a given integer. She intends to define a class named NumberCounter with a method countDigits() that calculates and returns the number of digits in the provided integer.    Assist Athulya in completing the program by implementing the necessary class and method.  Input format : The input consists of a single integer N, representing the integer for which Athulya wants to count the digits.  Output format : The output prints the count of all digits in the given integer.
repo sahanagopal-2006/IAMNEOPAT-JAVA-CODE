@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+class NumberCounter {
+    private int number;
+
+    public NumberCounter(int number) {
+        this.number = number;
+    }
+
+    public int countDigits() {
+        int count = 0;
+        int tempNumber = number;
+
+        while (tempNumber != 0) {
+            tempNumber /= 10;
+            count++;
+        }
+
+        return count;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int inputNumber = scanner.nextInt();
+
+        NumberCounter numberCounter = new NumberCounter(inputNumber);
+
+        int digitCount = numberCounter.countDigits();
+
+        System.out.println(digitCount);
+
+        scanner.close();
+    }
+}
